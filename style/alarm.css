@@ -1,0 +1,30 @@
+.b-alarm{
+    margin-top: 35px;
+    width: 100%;
+}
+.alarm-container{
+    display: flex;
+    justify-content: space-between;
+}
+.err{
+    color: var(--color-alarm);
+    font-size: 1.5em;
+}
+.lines-alarm-time{
+    min-height: 100%;
+    width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;    
+}
+.line-alarm-time:first-child{
+    background: var(--color-alarm);    
+    height: 240px;
+    width: 5px
+}
+.line-alarm-time:last-child{
+    height: 240px;
+}

@@ -1,0 +1,62 @@
+.clock-main-classic{
+    padding: 30px;
+    border: 13px solid var(--color-classic);
+    border-radius: 100px;
+}
+.clock-container-classic{
+    min-width: 500px;
+    min-height: 500px;
+    position: relative;
+}
+.intervals-classic{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.interval-classic{
+    background: var(--color-classic);
+    width: 5px;
+    height: 30px
+}
+.lines-classic{
+    min-height: 100%;
+    width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.line-classic-seconds:first-child{
+    background: var(--color-classic);
+    border-radius: 5px;
+}
+.line-classic-seconds{
+    height: 240px;
+}
+.line-classic-minutes{
+    height: 150px;
+}
+.line-classic-minutes:first-child{
+    background:var(--color-classic);
+}
+.line-classic-hours{
+    height: 120px;
+}
+.line-classic-hours:first-child{
+    background:var(--color-classic);
+
+}
+.date-classic{
+    position: absolute;
+    top:50%;
+    left: 35%;
+    font-size: 1.5em;
+    color: var(--color-classic);
+    font-weight: 900;
+}

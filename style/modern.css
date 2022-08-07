@@ -1,0 +1,73 @@
+.clock-main-modern {
+    padding: 30px;
+    border: 50px solid var(--color-modern);
+    border-radius: 1000px;
+}
+.clock-container-modern{
+    min-width: 500px;
+    min-height: 500px;
+    position: relative;
+}
+.intervals-modern{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.interval-modern{
+    background: var(--color-modern);
+    width: 5px;
+    height: 30px;
+    border-radius: 10px;
+}
+.intervals-modern:nth-child(1) .interval-modern{
+    height: 60px;
+    width: 10px;
+}
+.intervals-modern:nth-child(4) .interval-modern{
+    height: 60px;
+    width: 10px;
+}
+.lines-modern{
+    min-height: 100%;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.line-modern-seconds:first-child{
+    background: var(--color-modern);
+    border-radius: 10px;
+}
+.line-modern-seconds{
+    height: 240px;
+    border-radius: 10px;
+}
+.line-modern-minutes{
+    height: 150px;
+    border-radius: 10px;
+}
+.line-modern-minutes:first-child{
+    background:var(--color-modern);
+}
+.line-modern-hours{
+    height: 120px;
+    border-radius: 10px;
+}
+.line-modern-hours:first-child{
+    background:var(--color-modern);
+}
+.date-modern{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    font-size: 2.5em;
+    color: var(--color-modern);
+    font-weight: 900;
+}

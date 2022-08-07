@@ -1,0 +1,106 @@
+.clock-main-sport {
+    padding: 30px;
+    border: 50px solid var(--color-sport);
+    border-radius: 1000px;
+    background: black;
+}
+.clock-container-sport{
+    min-width: 500px;
+    min-height: 500px;
+    position: relative;
+}
+.intervals-sport{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.interval-sport{
+    background: var(--color-sport);
+    width: 2px;
+    height: 30px;
+}
+.intervals-sport:nth-child(4) .interval-sport:nth-child(1){
+    background: var(--color-sport-red);
+}
+.intervals-sport:nth-child(1) .interval-sport{
+    height: 60px;
+    width: 10px;
+}
+.intervals-sport:nth-child(4) .interval-sport{
+    height: 60px;
+    width: 10px;
+}
+.intervals-sport:nth-child(1) .interval-sport:nth-child(1){
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.intervals-sport:nth-child(1) .interval-sport:nth-child(2){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.intervals-sport:nth-child(4) .interval-sport:nth-child(1){
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.intervals-sport:nth-child(4) .interval-sport:nth-child(2){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.intervals-sport:nth-child(4) .interval-sport{
+    height: 60px;
+    width: 10px;
+}
+.lines-sport{
+    min-height: 100%;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.line-sport-seconds:first-child{
+    background: var(--color-sport-red);
+    border-radius: 10px;
+}
+.line-sport-seconds{
+    height: 240px;
+    border-radius: 10px;
+}
+.line-sport-minutes{
+    height: 150px;
+    border-radius: 10px;
+}
+.line-sport-minutes:first-child{
+    background:var(--color-sport);
+}
+.line-sport-hours{
+    height: 120px;
+    border-radius: 10px;
+}
+.line-sport-hours:first-child{
+    border: 3px solid var(--color-sport);
+    background: black;
+}
+.date-sport{
+    position: absolute;
+    z-index: 0;
+    top: 47%;
+    left: 65%;
+    font-size: 1.5em;
+    color: var(--color-sport-red);;
+    font-weight: 200;
+}
